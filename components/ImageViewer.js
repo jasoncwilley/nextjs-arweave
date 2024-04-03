@@ -14,7 +14,7 @@ const ImageViewer = () => {
     const loadUploadedData = async () => {
         setLoading(true)
         const query = myQuery();
-        const results = await query.search("irys:transactions").tags([{ name: "user-ID", values: ["2"] }]).sort("ASC");
+        const results = await query.search("irys:transactions").tags([{ name: "user-ID", values: ["3"] }]).sort("ASC");
         console.log("the result of the transactions: ", results)
         setData(results);
         setLoading(false);
